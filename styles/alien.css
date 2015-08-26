@@ -1,0 +1,21 @@
+.alien {
+    background-color: #000;
+    color: #ccc;
+    font-family: "DejaVu Sans", Sans-Serif;
+}
+
+.alien code, .alien kbd, .alien pre, .alien samp, .alien tt {
+    font-family: "DejaVu Sans Mono";
+}
+
+.alien a {
+    color: #1e5;
+}
+
+.alien .XSlidesToc {
+    border: 4px dashed #1e5;
+}
+.alien h1 {
+    color: #1e5;
+    border-bottom: #1e5 1px solid;
+}

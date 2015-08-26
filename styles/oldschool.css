@@ -1,0 +1,18 @@
+.oldschool {
+    background-color: #ffc;
+    color: #222;
+    font-family: "DejaVu Serif", "Serif";
+}
+
+.oldschool code, .oldschool kbd, .oldschool pre, .oldschool samp, .oldschool tt {
+    font-family: "DejaVu Sans Mono", "Serif";
+}
+
+.oldschool .XSlidesToc {
+    border-color: #222;
+}
+
+.oldschool h1 {
+    color: #000;
+    text-align: center;
+}

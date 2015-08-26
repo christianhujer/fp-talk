@@ -1,0 +1,200 @@
+@font-face{font-family:'FontAwesome';src:url('http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.eot?v=4.3.0');src:url('http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.eot?#iefix&v=4.3.0') format('embedded-opentype'),url('http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.woff2?v=4.3.0') format('woff2'),url('http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.woff?v=4.3.0') format('woff'),url('http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.ttf?v=4.3.0') format('truetype'),url('../fonts/fontawesome-webfont.svg?v=4.3.0#fontawesomeregular') format('svg');font-weight:normal;font-style:normal}
+.fa{display:inline-block;font:normal normal normal 14px/1 FontAwesome;font-size:inherit;text-rendering:auto;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;transform:translate(0, 0)}
+body {
+    font-size: 250%; /* Will be overridden at runtime XSlides.js by XSlides.setFontSizeFromWindowSize(). */
+    margin: 0px;
+    top: 0px; bottom: 0px; height: auto;
+    left: 0px; right: 0px; width: auto;
+    position: absolute;
+}
+div.notes {
+    display: none;
+}
+div.slide {
+    display: none;
+    padding: 1em;
+    width: auto;
+    height: auto;
+    top: 0px; bottom: 0px;
+    left: 0px; right: 0px;
+    position: absolute;
+    overflow: auto;
+}
+div.slide h1 {
+    margin-top: 0px;
+}
+div.XSlidesToc, div.XSlidesToc h4 {
+    color: #f84;
+    background-color: #fff;
+    background: linear-gradient(to bottom, rgba(48, 48, 48, 0.875), rgba(16, 16, 16, 0.875));
+    background: -moz-linear-gradient(rgba(48, 48, 48, 0.875), rgba(16, 16, 16, 0.875));
+    background: -webkit-linear-gradient(rgba(48, 48, 48, 0.875), rgba(16, 16, 16, 0.875));
+}
+div.XSlidesToc h4, div.XSlidesToc a {
+    color: #f84;
+}
+div.XSlidesToc {
+    left: 1em;
+    position: fixed;
+    top: 1em;
+}
+div.XSlidesToc {
+    max-height: 80%;
+    overflow-x: auto;
+}
+div.XSlidesToc div {
+    max-height: 80%;
+    overflow-x: auto;
+}
+div.XSlidesHelp, div.XSlidesHelp h4 {
+    background-color: #000;
+    background: linear-gradient(to bottom, rgba(48, 48, 48, 0.875), rgba(16, 16, 16, 0.875));
+    background: -moz-linear-gradient(rgba(48, 48, 48, 0.875), rgba(16, 16, 16, 0.875));
+    background: -webkit-linear-gradient(rgba(48, 48, 48, 0.875), rgba(16, 16, 16, 0.875));
+}
+div.XSlidesHelp {
+    left: 3em;
+    right: 3em;
+    position: fixed;
+    top: 3em;
+    color: #f84;
+}
+div.XSlidesHelp table {
+    left: auto;
+    right: auto;
+    width: auto;
+}
+div.XSlidesToc, div.XSlidesHelp {
+    font-size: 75%;
+    visibility: hidden;
+    padding: 1ex;
+    border-radius: 0.5ex;
+    font-family: Sans-Serif;
+}
+div.XSlidesToc h4, div.XSlidesHelp h4 {
+    margin: 0px;
+    padding: 0px;
+    border-radius: 0.5ex;
+    text-align: center;
+}
+div.XSlidesToc a {
+    display: block;
+}
+
+div.XSlidesFooter {
+    display: block;
+    position: absolute;
+    bottom: 0px;
+    height: auto;
+    top: auto;
+    left: 0px;
+    right: 0px;
+    width: auto;
+    background-color: #222;
+    color: #aaa;
+    font-family: Sans-Serif;
+    font-size: 66.6%;
+    background: linear-gradient(to bottom, rgba(48, 48, 48, 0.875), rgba(16, 16, 16, 0.875));
+    background: -moz-linear-gradient(rgba(48, 48, 48, 0.875), rgba(16, 16, 16, 0.875));
+    background: -webkit-linear-gradient(rgba(48, 48, 48, 0.875), rgba(16, 16, 16, 0.875));
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin: 0px;
+    text-align: center;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+div.XSlidesFooter ul {
+    margin: 0px;
+    padding: 0px;
+}
+div.XSlidesFooter ul.right {
+    list-style-image: none;
+    display: inline;
+    float: right;
+}
+div.XSlidesFooter ul.left {
+    list-style-image: none;
+    display: inline;
+    float: left;
+}
+div.XSlidesFooter ul.center {
+    list-style-image: none;
+    display: inline;
+}
+div.XSlidesFooter ul.center li {
+    margin-left: 0.5ex;
+    margin-right: 0.5ex;
+}
+div.XSlidesFooter li {
+    display: inline;
+    list-style-image: none;
+    list-style-type: none;
+    padding-left: 0.5ex;
+    padding-right: 0.5ex;
+    border-left: 1px solid #383838;
+    border-right: 1px solid #181818;
+}
+div.XSlidesFooter li:hover {
+    background: linear-gradient(to bottom, rgba(48, 96, 48, 0.5), rgba(16, 64, 16, 0.5));
+    background: -webkit-linear-gradient(rgba(48, 96, 48, 0.5), rgba(16, 64, 16, 0.5));
+}
+
+div.XSlidesFooter a {
+    text-decoration: none;
+    color: inherit;
+}
+
+div#slide_black, div#slide_white {
+    position: fixed;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    visibility: hidden;
+}
+div#slide_black {
+    background-color: #000;
+}
+div#slide_white {
+    background-color: #fff;
+}
+table.tiles {
+    padding-left: 3em;
+    padding-right: 3em;
+    width: 100%;
+    height: 70%;
+}
+table.tiles td, table.tiles th {
+    text-align: center;
+    padding-left: 1em;
+    padding-right: 1em;
+    width: 1%;
+}
+table.tiles .fa {
+    font-size: 250%;
+}
+table.tiles a {
+    display: block;
+    text-decoration: none;
+    width: auto;
+    padding-top: 1ex;
+    padding-bottom: 1ex;
+}
+
+table.nice {
+    width: 100%;
+    height: 70%;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+table.nice td, table.nice th {
+    border: 1px solid white;
+}

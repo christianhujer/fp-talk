@@ -1,0 +1,26 @@
+.alienTV {
+    background-color: #000;
+    color: #ccc;
+    font-family: "DejaVu Sans", Sans-Serif;
+}
+
+.alienTV code, .alienTV kbd, .alienTV pre, .alienTV samp, .alienTV tt {
+    font-family: "DejaVu Sans Mono";
+}
+
+.alienTV a {
+    color: #1e5;
+}
+
+.alienTV .XSlidesToc {
+    border: 4px dashed #1e5;
+}
+.alienTV h1 {
+    color: #1e5;
+    border-bottom: #1e5 1px solid;
+    padding-left: 0.5ex;
+}
+
+.alienTV a, .alienTV h1 {
+    background-image: url('TV.gif');
+}

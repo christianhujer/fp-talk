@@ -1,0 +1,13 @@
+.comic {
+    background-color: #ffc;
+    color: #222;
+    font-family: "Comic Sans MS";
+}
+
+.comic .XSlidesToc {
+    border-color: #222;
+}
+
+.comic h1 {
+    color: #000;
+}
