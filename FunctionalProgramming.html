@@ -1,5 +1,8 @@
 <!DOCTYPE html>
-<title>Markdown Example</title>
+<!--
+vim: filetype=markdown
+-->
+<title>Functional Programming</title>
 <script src="https://google-code-prettify.googlecode.com/svn/loader/prettify.js"></script>
 <link rel="Stylesheet" href="https://google-code-prettify.googlecode.com/svn/loader/skins/desert.css" />
 <link rel="Stylesheet" href="DefaultStyles.css" />
@@ -25,6 +28,10 @@ TODO Rocket, Miguel Alcubierre, Warp Drive, Star Trek, NASA, EM-Drive
 
 # History of Functional Programming
 TODO John McCarthy 1958 Lisp Artificial Intelligence Oldest of the 3 major paradigms
+
+TODO Common Lisp, Emacs, Amiga Installer
+
+TODO Clojure, F#, Moore's Law
 
 # Part I: Pure Functions
 
@@ -88,7 +95,7 @@ Recursion
 Pure functions
 * Use const, especially for pointer destinations.
 * Enable all warnings (GCC: `-W -Wall -pedandic`)
-* Use PC-Lint.
+* Use static code analysis like PC-Lint.
 * Avoid global variables (and `static` locals are global!).
 Higher-Order Functions
 * Use function pointers
@@ -100,9 +107,9 @@ Higher-Order Functions
 # 
 <<(src/sortecho.c)
 
-# Why FP in C?
+# Why Functional Programming in C?
 Software Architecture
-* Use function pointers for higher-order functions / polymorphism.
+* Use function pointers for higher-order functions / polymorphism to follow the SOLID principles.
 
 Safety
 * MISRA-C, BARR10 and ISO-26262 demand elements of Functional Programming for safe, robust code!
