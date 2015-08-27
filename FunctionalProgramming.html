@@ -33,6 +33,20 @@ TODO Common Lisp, Emacs, Amiga Installer
 
 TODO Clojure, F#, Moore's Law
 
+# Why Functional Programming?
+<!-- From http://perl.plover.com/classes/fp/samples/slide008a.html -->
+Modularity
+
+Gluing functions together from
+* Interchangeable parts
+* Assembly of complicated functions from simpler ones
+
+## A little modularization can go a long way
+
+Gluing whole programs together
+* Lazy computation
+* Data flow and process-driven communication (pipes / micro services anyone?!)
+
 # Part I: Pure Functions
 
 # Pure Functions...
@@ -113,3 +127,33 @@ Software Architecture
 
 Safety
 * MISRA-C, BARR10 and ISO-26262 demand elements of Functional Programming for safe, robust code!
+
+# Functional Programming in Prolog
+Prolog is a declarative logic programming language.
+* It's *declarative*.
+* It uses *recursion* a lot - probably more like any other language.
+* Prolog has *pattern matching* in the *function signature*!
+(Well, Prolog doesn't call it function, but that doesn't matter.)
+* It already *feels* like a functional programming language - almost.
+
+Use `call()` for *higher-order functions*.
+
+# 
+<<(src/echo.pl)
+
+# Functional Programming in Java
+Java 8 brought some improvements:
+* Lambda Expressions
+* Method References
+* Streams
+
+Limitations still there:
+* No real Closures (access possible only to effectively `final` variables).
+* Functions still aren't first class citizens.
+* No tail-recursion optimization (Oracle, are you listening?!)!!!
+
+# Functional Programming Perl
+TODO
+
+# 
+<<(src/countLines.pl)
