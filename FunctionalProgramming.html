@@ -75,3 +75,34 @@ TODO Slides about Pattern Matching
 
 # Examples
 TODO Slides about Examples
+
+# Part XI: FP in non-funcational languages
+* Elements of Functional Programming can be used in all languages.
+* Examples in Java, C, Prolog
+
+# Functional Programming in C
+
+Recursion
+* Relevant compilers support tail-recursion (and last call optimization).
+* If stack is critical, check disassembly!
+Pure functions
+* Use const, especially for pointer destinations.
+* Enable all warnings (GCC: `-W -Wall -pedandic`)
+* Use PC-Lint.
+* Avoid global variables (and `static` locals are global!).
+Higher-Order Functions
+* Use function pointers
+* GCC: Support for closures
+
+# 
+<<(src/echo.c)
+
+# 
+<<(src/sortecho.c)
+
+# Why FP in C?
+Software Architecture
+* Use function pointers for higher-order functions / polymorphism.
+
+Safety
+* MISRA-C, BARR10 and ISO-26262 demand elements of Functional Programming for safe, robust code!

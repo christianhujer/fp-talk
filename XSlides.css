@@ -198,3 +198,12 @@ table.nice {
 table.nice td, table.nice th {
     border: 1px solid white;
 }
+
+pre { background: rgba(0, 0, 0, 0) !important; }
+li.L0, li.L1, li.L2, li.L3, li.L5, li.L6, li.L7, li.L8 { list-style-type: decimal !important }
+li.L0, li.L2, li.L4, li.L6, li.L8 { background: rgba(64, 64, 64, 0.5) !important; }
+li.L1, li.L3, li.L5, li.L7, li.L9 { background: rgba(0, 0, 0, 0.5) !important; }
+
+pre.linenums {
+    margin-left: 1em;
+}
